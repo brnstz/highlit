@@ -1,0 +1,67 @@
+$def with (hlimg, enc_id, ext, auth, width, height)
+
+$var jsfiles: /static/js/select.js
+
+<div id="inputform">
+
+    <table align="center" cellpadding="10">
+        <tr>
+            <td valign="top">
+                <div class="infobox">
+                    <div class="textspace">
+                        <ul> 
+                            <li>Select a highlighting style</li>
+                            <li>Drag and resize the yellow box below</li>
+                            <li>Click the Highlight! button</li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+
+
+            <td valign="top">
+                
+                <select id="styleselect">
+                    <option id="lighten" value="lighten">lighten</option>
+                    <option id="red" value="red">red circle</option>
+                    <option id="blue" value="blue">blue circle</option>
+                    <option id="yellow" value="yellow">yellow circle</option>
+                    <option id="orange" value="orange">orange circle</option>
+                    <option id="white" value="white">white circle</option>
+                    <option id="purple" value="purple">purple circle</option>
+                    <option id="green" value="green">green circle</option>
+                </select>
+
+                <div class="buttons">
+                    <button class="bigtxt" id="done" name="done">Highlight!</button>
+                </div>
+            </td>
+
+            <td valign="top">
+                <img id="preview" src="/static/images/lighten.gif">
+            </td>
+        </tr>
+    </table>
+
+    <div class="highwrapper">
+        <div class="tohighlight">
+            <img height="$height" width="$width" src="$hlimg" class="hlimg">
+        </div>
+
+        <div class="highlighter">
+            <img id="highcircle" height="100" width="100" src="/static/images/circle.gif">
+        </div>
+    </div>
+
+    <form>
+        <input type="hidden" name="enc_id" id="enc_id" value="$enc_id">
+        <input type="hidden" name="ext" id="ext" value="$ext">
+        <input type="hidden" name="auth" id="auth" value="$auth">
+    </form>
+</div>
+
+<div id="spinner" class="centerhide">
+    <img src="/static/images/spinner.gif">
+</div>
+
+

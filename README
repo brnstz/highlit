@@ -1,0 +1,36 @@
+Source code for the website http://highl.it
+
+database schema:
+
+CREATE TABLE images(
+    id INTEGER PRIMARY KEY,
+    height INTEGER,
+    width  INTEGER,
+    top    INTEGER,
+    left   INTEGER,
+    ext    TEXT,
+    auth   TEXT
+);
+
+sample convert commands:
+convert 1.jpg -crop 32x32+100+100 +repage 1crop.jpg
+
+creates 32x32 image starting at 100,100
+
+convert Y.jpg -matte -fill '#000a' -draw 'rectangle 0,0,300,300' blah.jpg
+
+convert Y.jpg -matte -fill '#000a' -draw 'rectangle 0,0,10000,10000' blah.jpg 
+
+convert blah.jpg -draw "image SrcOver 100,100 0,0 '../cimg/Y.jpg'" blah2.jpg
+
+TODO:
+- don't allow animated gifs
+- constraint window in javascript
+- make iframe?
+- put "done" button in a good place
+- constraint dimensions in python
+- add "loading" while doing operations
+- change cursor on logo, make clickable to home page
+- report url
+- make url work
+- install on dreamhost

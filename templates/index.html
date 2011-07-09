@@ -1,0 +1,20 @@
+$var jsfiles: /static/js/index.js
+
+<form id="upform" action="/app/upload" method="post" enctype="multipart/form-data">
+
+    <div id="inputform" class="center">
+        <div class="mediumspaced">
+            Select an image: <input class="mediumtxt" id="upfile" type="file" name="upfile" />
+        </div>
+
+        <div class="mediumspaced">
+            <input type="submit" class="bigtxt" id="upbutton" name="upload" value="Upload!">
+        </div>
+    </div>
+
+    <div id="spinner" class="centerhide">
+        <img src="/static/images/spinner.gif">
+    </div>
+
+</form>
+

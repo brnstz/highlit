@@ -1,0 +1,167 @@
+div.highwrapper {
+    position: relative;
+}
+
+div.highlighter {
+    opacity: 0.50;
+    filter:alpha(opacity=50);
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+
+div.tohighlight {
+    position: absolute;
+    top: 10px;
+    z-index: 0;
+}
+
+.buttons {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.mediumspaced {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.bigspaced {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.mediumtxt {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.bigtxt {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+div.center {
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+div.centerhide {
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    width: 100%;
+}
+
+div.logo {
+    font-family: sans-serif;
+    font-size: 75px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+span.logo1 {
+    color: lime;
+    cursor: pointer;
+}
+
+span.logo2 {
+    color: blue;
+    cursor: pointer;
+}
+
+div.subtitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.errorbox {
+    background: #fff7d7;
+    border-color: red;
+    border-style: solid;
+    border-size: 1;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    color: red;
+    font-weight: bold;
+    display: none; 
+    text-align: left;
+}
+
+div.textspace {
+    margin: 10px;
+}
+
+.infobox {
+    background: #f7d7ff;
+    border-color: navy;
+    border-style: solid;
+    border-size: 1;
+    width: 400px;
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    color: blue;
+    text-align: left;
+}
+
+.linkshow {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+div.contact {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+table.divalign {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+div#styleselector {
+    z-index: 10;
+}
+
+select#styleselect { 
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+/*
+img#preview {
+    position: relative
+    top: 8px;
+    left: 5px;
+}
+*/
+
+select#styleselect option {
+    font-size: 30px;
+}
+

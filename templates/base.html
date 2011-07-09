@@ -1,0 +1,40 @@
+$def with (content)
+<html>
+<head>
+    
+    <title>highl.it</title>
+    
+    <link type="text/css" rel="stylesheet" href="/static/css/highlit.css">
+    <link type="text/css" rel="stylesheet" href="/static/jquery/css/jquery-ui.css">
+    <script type="text/javascript" src="/static/jquery/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/jquery/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/static/jquery/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/static/js/global.js"></script>
+    
+    $if content.jsfiles:
+        $for f in content.jsfiles.split():
+            <script type="text/javascript" src="$f"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <span class="logo1" id="l1">h</span><span class="logo1" id="l2">i</span><span class="logo1" id="l3">g</span><span class="logo1" id="l4">h</span><span class="logo2" id="l5">l</span><span class="logo2" id="l6">.</span><span class="logo2" id="l7">i</span><span class="logo2" id="l8">t</span>
+    </div>
+
+    <div class="subtitle">Upload an image, highlight it, and share with your friends.</div>
+
+    <div class="center">
+        <div class="errorbox">
+            <div class="textspace"></div>
+        </div>
+    </div>
+
+$:content
+
+    <div class="contact">
+        &copy; 2009 - <a href="mailto:contact@highl.it">contact@highl.it</a>
+    </div>
+
+</body>
+</html>
+
