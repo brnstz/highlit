@@ -1,3 +1,4 @@
+$import datetime
 $def with (content)
 <html>
 <head>
@@ -32,7 +33,7 @@ $def with (content)
 $:content
 
     <div class="contact">
-        &copy; 2009 - <a href="mailto:contact@highl.it">contact@highl.it</a>
+        &copy; 2009 - $datetime.today().year Brian Seitz <a href="mailto:brnstz@gmail.com">brnstz@gmail.com</a>
     </div>
 
 </body>
