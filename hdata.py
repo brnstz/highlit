@@ -5,6 +5,7 @@ from boto.s3.key import Key
 
 import os
 
+# Replace access keys with real keys on install
 ACCESS_KEY = "FIXME"
 SECRET_KEY = "FIXME"
 BUCKET     = "i.highl.it"
